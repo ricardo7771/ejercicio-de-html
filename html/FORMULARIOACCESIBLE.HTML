@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" href="../css/FORMULARIOACCESIBLE.CSS">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Registro</h1>
+    <form>
+      <label for="name">Nombre Completo</label>
+      <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required>
+
+      <label for="email">Correo Electrónico</label>
+      <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+
+      <label for="password">Contraseña</label>
+      <div class="password-wrapper">
+        <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+        <button type="button" id="toggle-password" class="toggle-password">👁</button>
+      </div>
+
+      <label for="confirm-password">Confirmar Contraseña</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirma tu contraseña" required>
+
+      <div class="progress-bar-container">
+        <label for="progress">Integridad de la Contraseña</label>
+        <progress id="progress" value="0" max="100"></progress>
+      </div>
+
+      <div class="requirements">
+        <h3>Requisitos de la Contraseña:</h3>
+        <ul>
+          <li class="requirement">Al menos 8 caracteres</li>
+          <li class="requirement">Una letra mayúscula</li>
+          <li class="requirement">Una letra minúscula</li>
+          <li class="requirement">Un número</li>
+          <li class="requirement">Un carácter especial</li>
+        </ul>
+      </div>
+
+      <button type="submit" class="submit-btn">Registrarse</button>
+    </form>
+  </div>
+</body>
+</html>
